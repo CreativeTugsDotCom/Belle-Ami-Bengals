@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belle Ami Bengals | Premium Bengal Kittens & Cats</title>
+    <meta name="description" content="Healthy, socialized, TICA registered Bengal kittens raised with love in a family environment. Available for adoption with nationwide safe delivery.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Tailwind Configuration & Custom Styles -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: {
+                            50: '#FCFBF7',
+                            100: '#FAF6ED',
+                            200: '#F3EBD8',
+                            300: '#E9D9BB',
+                        },
+                        amber: {
+                            500: '#D97706',
+                            600: '#B45309',
+                            700: '#92400E',
+                        },
+                        gold: {
+                            400: '#E2B866',
+                            500: '#C59A3F',
+                            600: '#A47D29',
+                            700: '#7F5E19',
+                        },
+                        stone: {
+                            850: '#231F1D',
+                            900: '#1C1917',
+                        },
+                        sage: {
+                            100: '#E2E8E4',
+                            700: '#3D5A45',
+                            800: '#2A4031',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 30px -10px rgba(180, 140, 80, 0.08)',
+                        'glow': '0 0 25px rgba(197, 154, 63, 0.25)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #FAF6ED;
+            color: #231F1D;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .font-serif-title {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+        }
+
+        /* Glassmorphism Navigation */
+        .glass-nav {
+            background: rgba(250, 246, 237, 0.88);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(226, 184, 102, 0.2);
+        }
+
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #FAF6ED 0%, #F3EBD8 50%, #EFE3CA 100%);
+        }
+
+        .gold-btn-gradient {
+            background: linear-gradient(135deg, #C59A3F 0%, #A47D29 100%);
+            transition: all 0.3s ease;
+        }
+
+        .gold-btn-gradient:hover {
+            background: linear-gradient(135deg, #D4A84B 0%, #B48B31 100%);
+            box-shadow: 0 8px 20px rgba(197, 154, 63, 0.35);
+            transform: translateY(-2px);
+        }
+
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px -15px rgba(164, 125, 41, 0.15);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF6ED;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D9C4A1;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #C59A3F;
+        }
+
+        .spot-pattern {
+            background-image: radial-gradient(#C59A3F 0.75px, transparent 0.75px), radial-gradient(#C59A3F 0.75px, #FAF6ED 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+            opacity: 0.08;
+        }
+
+        /* Accordion transition */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+        }
+
+        .faq-answer.active {
+            max-height: 1000px;
+            transition: max-height 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="text-stone-850 antialiased selection:bg-gold-500 selection:text-white">
+
+    <!-- SPOT PATTERN OVERLAY -->
+    <div class="fixed inset-0 spot-pattern pointer-events-none z-0"></div>
+
+    <!-- HEADER & NAVIGATION -->
+    <header class="sticky top-0 z-50 glass-nav transition-all duration-300" id="mainHeader">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- LOGO -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-full bg-gold-500/15 flex items-center justify-center border border-gold-500/30 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-cat text-gold-600 text-lg"></i>
+                    </div>
+                    <div>
+                        <span class="font-serif-title text-2xl sm:text-3xl font-bold tracking-tight text-stone-900 block leading-none">Belle Ami</span>
+                        <span class="text-[10px] tracking-[0.25em] text-gold-600 uppercase font-semibold block mt-1">Bengals Cattery</span>
+                    </div>
+                </a>
+
+                <!-- DESKTOP NAV LINKS -->
+                <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-stone-700">
+                    <a href="#home" class="hover:text-gold-600 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-gold-600 transition-colors">About</a>
+                    <a href="#kittens" class="hover:text-gold-600 transition-colors">Bengal Kittens</a>
+                    <a href="#why-us" class="hover:text-gold-600 transition-colors">Why Choose Us</a>
+                    <a href="#testimonials" class="hover:text-gold-600 transition-colors">Reviews</a>
+                    <a href="#locations" class="hover:text-gold-600 transition-colors">Locations</a>
+                    <a href="#faq" class="hover:text-gold-600 transition-colors">FAQ</a>
+                    <a href="#contact" class="hover:text-gold-600 transition-colors">Contact</a>
+                </nav>
+
+                <!-- HEADER CTA -->
+                <div class="hidden sm:flex items-center gap-4">
+                    <a href="#kittens" class="gold-btn-gradient text-white font-semibold text-sm px-5 py-2.5 rounded-full shadow-sm flex items-center gap-2">
+                        <span>View Available Kittens</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- MOBILE MENU BUTTON -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-lg text-stone-700 hover:text-stone-900 focus:outline-none" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU DROPDOWN -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-cream-50 border-b border-gold-500/20 px-6 py-5 shadow-lg">
+            <div class="flex flex-col space-y-4 font-medium text-stone-800">
+                <a href="#home" class="mobile-link hover:text-gold-600 py-1">Home</a>
+                <a href="#about" class="mobile-link hover:text-gold-600 py-1">About</a>
+                <a href="#kittens" class="mobile-link hover:text-gold-600 py-1">Bengal Kittens</a>
+                <a href="#why-us" class="mobile-link hover:text-gold-600 py-1">Why Choose Us</a>
+                <a href="#testimonials" class="mobile-link hover:text-gold-600 py-1">Reviews</a>
+                <a href="#locations" class="mobile-link hover:text-gold-600 py-1">Locations & Delivery</a>
+                <a href="#faq" class="mobile-link hover:text-gold-600 py-1">FAQ</a>
+                <a href="#contact" class="mobile-link hover:text-gold-600 py-1">Contact Us</a>
+                <a href="#kittens" class="mobile-link gold-btn-gradient text-white font-medium text-center py-3 rounded-full mt-2">
+                    View Available Kittens
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-10">
+
+        <!-- HERO SECTION -->
+        <section id="home" class="relative pt-8 pb-16 md:pt-14 md:pb-24 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                    
+                    <!-- HERO TEXT CONTENT -->
+                    <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+                        
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/20 text-gold-700 text-xs sm:text-sm font-semibold tracking-wide">
+                            <span class="w-2 h-2 rounded-full bg-gold-500 animate-pulse"></span>
+                            TICA Registered & HCM Screened Cattery
+                        </div>
+
+                        <h1 class="font-serif-title text-4xl sm:text-5xl lg:text-6xl font-bold text-stone-900 leading-[1.15]">
+                            Beautiful Bengal Kittens, <span class="italic text-gold-600 font-normal">Raised With Love</span>
+                        </h1>
+
+                        <p class="text-base sm:text-lg text-stone-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                            Healthy, loving & socialized Bengal companions raised in our home environment with unconditional care. Discover stunning rosette patterns, sweet temperaments, and lifetime support.
+                        </p>
+
+                        <!-- CTA BUTTONS -->
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                            <a href="#kittens" class="w-full sm:w-auto gold-btn-gradient text-white font-semibold text-base px-8 py-4 rounded-full shadow-md text-center flex items-center justify-center gap-2 group">
+                                <span>View Available Kittens</span>
+                                <i class="fa-solid fa-paw group-hover:rotate-12 transition-transform"></i>
+                            </a>
+                            <a href="#about" class="w-full sm:w-auto bg-white/80 hover:bg-white text-stone-800 font-semibold text-base px-8 py-4 rounded-full border border-gold-500/30 text-center hover:shadow-md transition-all">
+                                Learn About Our Bengals
+                            </a>
+                        </div>
+
+                        <!-- TRUST BADGES -->
+                        <div class="pt-8 border-t border-gold-500/15 grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
+                            <div class="flex items-center gap-2">
+                                <div class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs shrink-0">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <span class="text-xs sm:text-sm font-semibold text-stone-800">Health Focused</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <div class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs shrink-0">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <span class="text-xs sm:text-sm font-semibold text-stone-800">Family Raised</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <div class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs shrink-0">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <span class="text-xs sm:text-sm font-semibold text-stone-800">Socialized With Love</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <div class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs shrink-0">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <span class="text-xs sm:text-sm font-semibold text-stone-800">Lifetime Support</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- HERO IMAGE SHOWCASE -->
+                    <div class="lg:col-span-6 relative">
+                        <div class="relative mx-auto max-w-lg lg:max-w-none">
+                            
+                            <!-- Main Hero Image Frame -->
+                            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                                <img src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=1200&q=80" 
+                                     alt="Beautiful Bengal Kitten with vibrant rosette pattern" 
+                                     class="w-full h-[380px] sm:h-[480px] object-cover hover:scale-105 transition-transform duration-700"
+                                     onerror="this.src='https://placehold.co/800x600/FAF6ED/A47D29?text=Belle+Ami+Bengal+Kitten'">
+                                <div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent to-transparent"></div>
+                                
+                                <div class="absolute bottom-6 left-6 right-6 text-white">
+                                    <span class="inline-block px-3 py-1 bg-gold-500/80 backdrop-blur-md rounded-full text-xs font-semibold uppercase tracking-wider mb-2">Current Litter Spotlight</span>
+                                    <p class="font-serif-title text-2xl font-bold">Brown Rosetted & Snow Lynx Litters</p>
+                                </div>
+                            </div>
+
+                            <!-- Floating Badge 1 -->
+                            <div class="absolute -bottom-6 -left-4 sm:-left-6 bg-white p-4 rounded-2xl shadow-xl border border-gold-500/20 flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-600 text-xl font-bold">
+                                    <i class="fa-solid fa-award"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-stone-500 uppercase tracking-wider font-semibold">TICA Champion Bloodlines</p>
+                                    <p class="text-sm font-bold text-stone-900">100% Genetic Health Guarantee</p>
+                                </div>
+                            </div>
+
+                            <!-- Floating Badge 2 -->
+                            <div class="hidden sm:flex absolute -top-4 -right-4 bg-white/95 backdrop-blur-md px-4 py-3 rounded-2xl shadow-lg border border-gold-500/20 items-center gap-3">
+                                <div class="flex -space-x-2">
+                                    <span class="w-8 h-8 rounded-full bg-gold-400 border-2 border-white flex items-center justify-center text-xs font-bold text-white">★</span>
+                                    <span class="w-8 h-8 rounded-full bg-gold-500 border-2 border-white flex items-center justify-center text-xs font-bold text-white">★</span>
+                                    <span class="w-8 h-8 rounded-full bg-gold-600 border-2 border-white flex items-center justify-center text-xs font-bold text-white">★</span>
+                                </div>
+                                <span class="text-xs font-bold text-stone-800">5.0 Rated Breeders</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="py-16 md:py-24 bg-white/60 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Image Grid -->
+                    <div class="lg:col-span-5 order-2 lg:order-1">
+                        <div class="relative">
+                            <div class="rounded-3xl overflow-hidden shadow-xl border-2 border-cream-200">
+                                <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=800&q=80" 
+                                     alt="Belle Ami Bengal breeder holding kitten" 
+                                     class="w-full h-[420px] object-cover"
+                                     onerror="this.src='https://placehold.co/600x800/FAF6ED/A47D29?text=Our+Bengal+Family'">
+                            </div>
+
+                            <div class="absolute -bottom-8 -right-4 sm:right-6 bg-cream-100 border border-gold-500/30 p-6 rounded-2xl shadow-lg max-w-xs">
+                                <p class="font-serif-title text-3xl font-bold text-gold-600 mb-1">12+ Years</p>
+                                <p class="text-xs text-stone-600 font-medium leading-relaxed">Of passionate ethical breeding, raise in our family living room with endless affection.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text Content -->
+                    <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+                        <div class="inline-block px-3.5 py-1 rounded-full bg-gold-500/10 text-gold-700 text-xs font-semibold tracking-wider uppercase">
+                            Our Philosophy
+                        </div>
+
+                        <h2 class="font-serif-title text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 leading-tight">
+                            More Than a Kitten — <span class="italic text-gold-600 font-normal">A Loving Family Companion</span>
+                        </h2>
+
+                        <p class="text-stone-600 text-base leading-relaxed">
+                            At <strong>Belle Ami Bengals</strong>, breeding isn't a commercial business—it is our deep passion. We believe every Bengal kitten deserves to grow up as a cherished family member. From the moment they are born in our home, our kittens receive daily handling, warmth, and structured early socialization.
+                        </p>
+
+                        <p class="text-stone-600 text-base leading-relaxed">
+                            We meticulously screen our breeding cats for optimal health, exotic leopard-like patterns, and remarkably sweet, dog-like temperaments. Our Bengals are raised around children, common household sounds, and gentle routines so they step into your home confident, curious, and affectionate.
+                        </p>
+
+                        <!-- Key Pillars -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                            <div class="p-4 rounded-xl bg-cream-100 border border-gold-500/20">
+                                <div class="text-gold-600 text-lg mb-2"><i class="fa-solid fa-heart-pulse"></i></div>
+                                <h3 class="font-bold text-stone-900 text-sm mb-1">Full Health Guarantee</h3>
+                                <p class="text-xs text-stone-600">PK-Def & PRA-b tested clear. HCM heart scanned regularly by licensed cardiologists.</p>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-cream-100 border border-gold-500/20">
+                                <div class="text-gold-600 text-lg mb-2"><i class="fa-solid fa-house-chimney-user"></i></div>
+                                <h3 class="font-bold text-stone-900 text-sm mb-1">In-Home Socialization</h3>
+                                <p class="text-xs text-stone-600">Raised underfoot in a warm family household, not caged in isolated kennels.</p>
+                            </div>
+                        </div>
+
+                        <div class="pt-2">
+                            <a href="#contact" class="inline-flex items-center gap-2 text-gold-700 font-bold hover:text-gold-600 transition-colors">
+                                <span>Schedule a Private Video Call or Visit</span>
+                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES / WHAT WE OFFER -->
+        <section class="py-16 md:py-24 bg-cream-100/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <span class="text-gold-600 text-xs font-bold tracking-widest uppercase">Excellence in Every Detail</span>
+                    <h2 class="font-serif-title text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 mt-2">What We Offer</h2>
+                    <p class="text-stone-600 mt-3 text-sm sm:text-base">Complete care from our nursery to your arms, ensuring a seamless experience.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <!-- Card 1 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-soft border border-gold-500/15 card-hover flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-600 flex items-center justify-center text-2xl mb-6">
+                                <i class="fa-solid fa-cat"></i>
+                            </div>
+                            <h3 class="font-serif-title text-2xl font-bold text-stone-900 mb-3">Bengal Kittens</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                                Beautiful, playful, and well-socialized Bengal kittens featuring bold rosettes, glittering coats, and vibrant eye colors.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-stone-500 space-y-2 border-t border-cream-200 pt-4 font-medium">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Brown, Snow & Silver Rosetted</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Litter box & scratch post trained</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-soft border border-gold-500/15 card-hover flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-600 flex items-center justify-center text-2xl mb-6">
+                                <i class="fa-solid fa-stethoscope"></i>
+                            </div>
+                            <h3 class="font-serif-title text-2xl font-bold text-stone-900 mb-3">Health & Care</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                                Comprehensive veterinary care, age-appropriate vaccinations, deworming, microchipping, and genetic clearance.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-stone-500 space-y-2 border-t border-cream-200 pt-4 font-medium">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Vet Health Certificate</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> 1 or 2 Year Written Guarantee</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-soft border border-gold-500/15 card-hover flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-600 flex items-center justify-center text-2xl mb-6">
+                                <i class="fa-solid fa-plane-departure"></i>
+                            </div>
+                            <h3 class="font-serif-title text-2xl font-bold text-stone-900 mb-3">Kitten Delivery</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                                Safe, stress-free flight nanny or ground transport options for families unable to travel for in-person pickup.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-stone-500 space-y-2 border-t border-cream-200 pt-4 font-medium">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> In-cabin flight nanny service</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Local & Tri-State Hand Delivery</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-soft border border-gold-500/15 card-hover flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-600 flex items-center justify-center text-2xl mb-6">
+                                <i class="fa-solid fa-handshake-angle"></i>
+                            </div>
+                            <h3 class="font-serif-title text-2xl font-bold text-stone-900 mb-3">Breeder Support</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                                Continuous lifetime guidance on nutrition, behavior, cat trees, vet visits, and smooth home transition.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-stone-500 space-y-2 border-t border-cream-200 pt-4 font-medium">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> 24/7 Advisory for adoptive owners</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Kitten Starter Package Included</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE US SECTION -->
+        <section id="why-us" class="py-16 md:py-24 bg-white relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-gold-600 text-xs font-bold tracking-widest uppercase">The Belle Ami Distinction</span>
+                    <h2 class="font-serif-title text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 mt-2">
+                        Why Families Choose Belle Ami Bengals
+                    </h2>
+                    <p class="text-stone-600 mt-4 text-base">
+                        We maintain the highest standards in Bengal breeding to deliver happy, confident, and stunningly exotic feline family members.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Icon Card 1 -->
+                    <div class="p-8 rounded-3xl bg-cream-50 border border-gold-500/20 card-hover flex items-start gap-5">
+                        <div class="w-12 h-12 rounded-2xl bg-gold-500 text-white flex items-center justify-center shrink-0 shadow-md">
+                            <i class="fa-solid fa-house-heart text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-stone-900 text-lg mb-2">Family-Raised Kittens</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed">
+                                Never kept in isolated cages. Raised right in our active household alongside family members for optimal warmth.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Icon Card 2 -->
+                    <div class="p-8 rounded-3xl bg-cream-50 border border-gold-500/20 card-hover flex items-start gap-5">
+                        <div class="w-12 h-12 rounded-2xl bg-gold-500 text-white flex items-center justify-center shrink-0 shadow-md">
+                            <i class="fa-solid fa-dna text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-stone-900 text-lg mb-2">Health-Focused Breeding</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed">
+                                Parent cats are genetically tested clear for PK-Def, PRA-b and routinely HCM cardiac screened by vet cardiologists.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Icon Card 3 -->
+                    <div class="p-8 rounded-3xl bg-cream-50 border border-gold-500/20 card-hover flex items-start gap-5">
+                        <div class="w-12 h-12 rounded-2xl bg-gold-500 text-white flex items-center justify-center shrink-0 shadow-md">
+                            <i class="fa-solid fa-hands-holding-child text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-stone-900 text-lg mb-2">Early Socialization</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed">
+                                Gentle neurological handling from day one makes our kittens affectionate, adventurous, and child-friendly.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Icon Card 4 -->
+                    <div class="p-8 rounded-3xl bg-cream-50 border border-gold-500/20 card-hover flex items-start gap-5">
+                        <div class="w-12 h-12 rounded-2xl bg-gold-500 text-white flex items-center justify-center shrink-0 shadow-md">
+                            <i class="fa-solid fa-crown text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-stone-900 text-lg mb-2">Beautiful Bloodlines</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed">
+                                Champion lines selected for high contrast rosettes, vivid coloration, sleek silky coats, and glitter effect.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Icon Card 5 -->
+                    <div class="p-8 rounded-3xl bg-cream-50 border border-gold-500/20 card-hover flex items-start gap-5">
+                        <div class="w-12 h-12 rounded-2xl bg-gold-500 text-white flex items-center justify-center shrink-0 shadow-md">
+                            <i class="fa-solid fa-comments text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-stone-900 text-lg mb-2">Personal Family Support</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed">
+                                Weekly photo/video updates while your kitten grows in our nursery before joining your home at 12-14 weeks.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Icon Card 6 -->
+                    <div class="p-8 rounded-3xl bg-cream-50 border border-gold-500/20 card-hover flex items-start gap-5">
+                        <div class="w-12 h-12 rounded-2xl bg-gold-500 text-white flex items-center justify-center shrink-0 shadow-md">
+                            <i class="fa-solid fa-shield-cat text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-stone-900 text-lg mb-2">Lifetime Breeder Guidance</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed">
+                                We remain your trusted partner throughout your Bengal’s life for any questions regarding care, diet, or habits.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- AVAILABLE KITTENS SECTION -->
+        <section id="kittens" class="py-16 md:py-24 bg-cream-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                    <div>
+                        <span class="text-gold-600 text-xs font-bold tracking-widest uppercase">Our Nursery Showcase</span>
+                        <h2 class="font-serif-title text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 mt-1">Available Bengal Kittens</h2>
+                        <p class="text-stone-600 mt-2 text-sm sm:text-base">Explore our current litters. Each kitten comes microchipped, vaccinated, and vet-certified.</p>
+                    </div>
+
+                    <!-- Filter Buttons -->
+                    <div class="flex flex-wrap gap-2" id="kittenFilters">
+                        <button data-filter="all" class="filter-btn active px-4 py-2 rounded-full text-xs font-semibold bg-gold-500 text-white shadow-sm transition-all">All Kittens</button>
+                        <button data-filter="brown" class="filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-white text-stone-700 hover:bg-gold-500/10 border border-gold-500/20 transition-all">Brown Rosetted</button>
+                        <button data-filter="snow" class="filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-white text-stone-700 hover:bg-gold-500/10 border border-gold-500/20 transition-all">Snow Lynx</button>
+                        <button data-filter="silver" class="filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-white text-stone-700 hover:bg-gold-500/10 border border-gold-500/20 transition-all">Silver Charcoal</button>
+                    </div>
+                </div>
+
+                <!-- Kitten Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="kittenGrid">
+                    
+                    <!-- Kitten 1 -->
+                    <div class="kitten-card bg-white rounded-3xl overflow-hidden shadow-md border border-gold-500/15 card-hover" data-category="brown">
+                        <div class="relative h-72 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Brown Rosetted Bengal Kitten" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/600x400/FAF6ED/A47D29?text=Brown+Rosetted+Bengal'">
+                            <div class="absolute top-4 left-4 bg-emerald-600 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                                Available
+                            </div>
+                            <div class="absolute top-4 right-4 bg-stone-900/70 backdrop-blur-md text-white text-xs font-semibold px-3 py-1 rounded-full">
+                                Male • 10 Wks
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-serif-title text-2xl font-bold text-stone-900">Leo</h3>
+                                <span class="text-xs font-semibold text-gold-700 bg-gold-500/10 px-2.5 py-1 rounded-md">Brown Rosetted</span>
+                            </div>
+                            <p class="text-xs text-stone-500 mb-4">Sire: CH Sultan • Dam: Belle Amber</p>
+                            <p class="text-stone-600 text-xs leading-relaxed mb-6">
+                                Exceptionally curious with vibrant doughnut rosettes and a glittery gold coat. Enjoys shoulder rides and playing with feather toys.
+                            </p>
+                            <div class="flex items-center justify-between border-t border-cream-200 pt-4">
+                                <div>
+                                    <span class="text-[10px] text-stone-400 block uppercase font-bold">Status</span>
+                                    <span class="text-sm font-bold text-stone-800">Ready in 2 Weeks</span>
+                                </div>
+                                <button onclick="openInquiryModal('Leo (Brown Rosetted Male)')" class="gold-btn-gradient text-white text-xs font-bold px-4 py-2.5 rounded-full shadow-sm">
+                                    Inquire About Leo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kitten 2 -->
+                    <div class="kitten-card bg-white rounded-3xl overflow-hidden shadow-md border border-gold-500/15 card-hover" data-category="snow">
+                        <div class="relative h-72 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Snow Lynx Bengal Kitten" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/600x400/FAF6ED/A47D29?text=Snow+Lynx+Bengal'">
+                            <div class="absolute top-4 left-4 bg-emerald-600 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                                Available
+                            </div>
+                            <div class="absolute top-4 right-4 bg-stone-900/70 backdrop-blur-md text-white text-xs font-semibold px-3 py-1 rounded-full">
+                                Female • 9 Wks
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-serif-title text-2xl font-bold text-stone-900">Maya</h3>
+                                <span class="text-xs font-semibold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md">Snow Seal Lynx</span>
+                            </div>
+                            <p class="text-xs text-stone-500 mb-4">Sire: CH Frost • Dam: Belle Pearl</p>
+                            <p class="text-stone-600 text-xs leading-relaxed mb-6">
+                                Striking ice-blue eyes with delicate cream rosettes that darken over time. Extremely purry, sweet, and loves lap cuddles.
+                            </p>
+                            <div class="flex items-center justify-between border-t border-cream-200 pt-4">
+                                <div>
+                                    <span class="text-[10px] text-stone-400 block uppercase font-bold">Status</span>
+                                    <span class="text-sm font-bold text-stone-800">Ready in 3 Weeks</span>
+                                </div>
+                                <button onclick="openInquiryModal('Maya (Snow Seal Lynx Female)')" class="gold-btn-gradient text-white text-xs font-bold px-4 py-2.5 rounded-full shadow-sm">
+                                    Inquire About Maya
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kitten 3 -->
+                    <div class="kitten-card bg-white rounded-3xl overflow-hidden shadow-md border border-gold-500/15 card-hover" data-category="silver">
+                        <div class="relative h-72 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Silver Rosetted Bengal Kitten" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/600x400/FAF6ED/A47D29?text=Silver+Rosetted+Bengal'">
+                            <div class="absolute top-4 left-4 bg-amber-600 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                                Reserved
+                            </div>
+                            <div class="absolute top-4 right-4 bg-stone-900/70 backdrop-blur-md text-white text-xs font-semibold px-3 py-1 rounded-full">
+                                Male • 12 Wks
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-serif-title text-2xl font-bold text-stone-900">Apollo</h3>
+                                <span class="text-xs font-semibold text-stone-700 bg-stone-100 px-2.5 py-1 rounded-md">Silver Rosetted</span>
+                            </div>
+                            <p class="text-xs text-stone-500 mb-4">Sire: CH Titan • Dam: Belle Sterling</p>
+                            <p class="text-stone-600 text-xs leading-relaxed mb-6">
+                                Pure silver background with jet-black rosettes. High energy, highly intelligent, and loves playing fetch. Reserved for the Miller family.
+                            </p>
+                            <div class="flex items-center justify-between border-t border-cream-200 pt-4">
+                                <div>
+                                    <span class="text-[10px] text-stone-400 block uppercase font-bold">Status</span>
+                                    <span class="text-sm font-bold text-amber-700">Joining New Family</span>
+                                </div>
+                                <button onclick="openInquiryModal('Waitlist for Similar Silver Litter')" class="bg-stone-800 text-white text-xs font-bold px-4 py-2.5 rounded-full hover:bg-stone-900 transition-colors">
+                                    Join Silver Waitlist
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kitten 4 -->
+                    <div class="kitten-card bg-white rounded-3xl overflow-hidden shadow-md border border-gold-500/15 card-hover" data-category="brown">
+                        <div class="relative h-72 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1561948955-570b270e7c36?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Warm Brown Bengal Kitten" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/600x400/FAF6ED/A47D29?text=Warm+Brown+Bengal'">
+                            <div class="absolute top-4 left-4 bg-emerald-600 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                                Available
+                            </div>
+                            <div class="absolute top-4 right-4 bg-stone-900/70 backdrop-blur-md text-white text-xs font-semibold px-3 py-1 rounded-full">
+                                Female • 11 Wks
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-serif-title text-2xl font-bold text-stone-900">Cleo</h3>
+                                <span class="text-xs font-semibold text-gold-700 bg-gold-500/10 px-2.5 py-1 rounded-md">Warm Golden Brown</span>
+                            </div>
+                            <p class="text-xs text-stone-500 mb-4">Sire: CH Sultan • Dam: Belle Sahara</p>
+                            <p class="text-stone-600 text-xs leading-relaxed mb-6">
+                                Rich warm mahogany tones with tri-color rosettes. Super friendly, loves being around kids and loves water play in the sink.
+                            </p>
+                            <div class="flex items-center justify-between border-t border-cream-200 pt-4">
+                                <div>
+                                    <span class="text-[10px] text-stone-400 block uppercase font-bold">Status</span>
+                                    <span class="text-sm font-bold text-stone-800">Ready Next Week</span>
+                                </div>
+                                <button onclick="openInquiryModal('Cleo (Warm Golden Female)')" class="gold-btn-gradient text-white text-xs font-bold px-4 py-2.5 rounded-full shadow-sm">
+                                    Inquire About Cleo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kitten 5 -->
+                    <div class="kitten-card bg-white rounded-3xl overflow-hidden shadow-md border border-gold-500/15 card-hover" data-category="snow">
+                        <div class="relative h-72 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Snow Mink Bengal Kitten" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/600x400/FAF6ED/A47D29?text=Snow+Mink+Bengal'">
+                            <div class="absolute top-4 left-4 bg-emerald-600 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                                Available
+                            </div>
+                            <div class="absolute top-4 right-4 bg-stone-900/70 backdrop-blur-md text-white text-xs font-semibold px-3 py-1 rounded-full">
+                                Male • 9 Wks
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-serif-title text-2xl font-bold text-stone-900">Casper</h3>
+                                <span class="text-xs font-semibold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md">Snow Mink Rosetted</span>
+                            </div>
+                            <p class="text-xs text-stone-500 mb-4">Sire: CH Frost • Dam: Belle Pearl</p>
+                            <p class="text-stone-600 text-xs leading-relaxed mb-6">
+                                Aqua eyes with strong caramel rosette contrast. Calm, gentle personality. Perfect companion cat for a peaceful home.
+                            </p>
+                            <div class="flex items-center justify-between border-t border-cream-200 pt-4">
+                                <div>
+                                    <span class="text-[10px] text-stone-400 block uppercase font-bold">Status</span>
+                                    <span class="text-sm font-bold text-stone-800">Ready in 3 Weeks</span>
+                                </div>
+                                <button onclick="openInquiryModal('Casper (Snow Mink Male)')" class="gold-btn-gradient text-white text-xs font-bold px-4 py-2.5 rounded-full shadow-sm">
+                                    Inquire About Casper
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Upcoming Litters Box -->
+                    <div class="kitten-card bg-gradient-to-br from-stone-900 to-stone-800 text-white rounded-3xl p-8 flex flex-col justify-between shadow-xl border border-gold-500/30">
+                        <div>
+                            <div class="w-12 h-12 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center text-xl mb-6 border border-gold-500/30">
+                                <i class="fa-solid fa-calendar-heart"></i>
+                            </div>
+                            <span class="text-gold-400 text-xs font-bold uppercase tracking-wider">Reserve In Advance</span>
+                            <h3 class="font-serif-title text-3xl font-bold mt-1 mb-4">Upcoming Litters & Waitlist</h3>
+                            <p class="text-stone-300 text-xs leading-relaxed mb-6">
+                                Planning for a kitten in late 2026? Join our VIP priority adoption list to get first pick of upcoming Brown, Snow, and Silver Bengal litters.
+                            </p>
+                        </div>
+                        <div>
+                            <div class="bg-stone-800/80 p-4 rounded-xl border border-stone-700 mb-6 text-xs text-stone-300 space-y-1">
+                                <p><strong class="text-gold-400">Next Planned Litter:</strong> Fall / Winter 2026</p>
+                                <p><strong class="text-gold-400">Expected Patterns:</strong> Brown Rosetted & Snow Lynx</p>
+                            </div>
+                            <button onclick="openInquiryModal('VIP Waitlist Application')" class="w-full gold-btn-gradient text-white text-xs font-bold py-3.5 rounded-full text-center block">
+                                Apply For Priority Waitlist
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- INTERACTIVE MATCHMAKER QUIZ -->
+        <section class="py-12 bg-white border-y border-gold-500/15">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-cream-50 p-8 sm:p-10 rounded-3xl border border-gold-500/20 shadow-soft text-center">
+                    <span class="inline-block px-3 py-1 rounded-full bg-gold-500/10 text-gold-700 text-xs font-bold uppercase tracking-wider mb-2">Interactive Helper</span>
+                    <h3 class="font-serif-title text-2xl sm:text-3xl font-bold text-stone-900">Find Your Ideal Bengal Match</h3>
+                    <p class="text-stone-600 text-xs sm:text-sm mt-2 max-w-lg mx-auto">Not sure which coat pattern or gender suits your home best? Select your preference to discover your fit.</p>
+                    
+                    <div id="quizContainer" class="mt-8 text-left max-w-xl mx-auto">
+                        <!-- Step 1 -->
+                        <div id="quizStep1" class="space-y-4">
+                            <p class="font-bold text-sm text-stone-800">1. What coat look captures your heart the most?</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                                <button onclick="nextQuizStep('Brown Rosetted')" class="p-3 bg-white hover:border-gold-500 border border-stone-200 rounded-xl text-xs font-medium text-stone-800 transition-all text-center">
+                                    🐆 Classic Brown Leopard Rosettes
+                                </button>
+                                <button onclick="nextQuizStep('Snow Lynx')" class="p-3 bg-white hover:border-gold-500 border border-stone-200 rounded-xl text-xs font-medium text-stone-800 transition-all text-center">
+                                    ❄️ Snow Lynx Blue-Eyed Snow
+                                </button>
+                                <button onclick="nextQuizStep('Silver Rosetted')" class="p-3 bg-white hover:border-gold-500 border border-stone-200 rounded-xl text-xs font-medium text-stone-800 transition-all text-center">
+                                    🥈 High Contrast Silver
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 (hidden initial) -->
+                        <div id="quizStep2" class="hidden space-y-4">
+                            <p class="font-bold text-sm text-stone-800">2. Tell us about your household dynamics:</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <button onclick="finishQuiz('Active family with kids/pets')" class="p-3 bg-white hover:border-gold-500 border border-stone-200 rounded-xl text-xs font-medium text-stone-800 transition-all text-center">
+                                    👨‍👩‍👧‍👦 Active home with children / dogs
+                                </button>
+                                <button onclick="finishQuiz('Calm environment / single owner')" class="p-3 bg-white hover:border-gold-500 border border-stone-200 rounded-xl text-xs font-medium text-stone-800 transition-all text-center">
+                                    ☕ Peaceful, quiet home
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Quiz Result -->
+                        <div id="quizResult" class="hidden text-center bg-white p-6 rounded-2xl border border-gold-500/30">
+                            <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto mb-3 text-xl">
+                                <i class="fa-solid fa-sparkles"></i>
+                            </div>
+                            <h4 class="font-serif-title text-xl font-bold text-stone-900" id="quizResultTitle">Perfect Match Found!</h4>
+                            <p class="text-xs text-stone-600 mt-2" id="quizResultText"></p>
+                            <button onclick="openInquiryModal('Matched Kitten Recommendation')" class="mt-4 gold-btn-gradient text-white text-xs font-bold px-6 py-2.5 rounded-full">
+                                Inquire About Matched Kittens
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FULL-WIDTH AVAILABLE CTA BANNER -->
+        <section class="relative py-20 bg-stone-900 text-white overflow-hidden">
+            <div class="absolute inset-0 z-0 opacity-30">
+                <img src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=1600&q=80" 
+                     alt="Bengal Kitten background" class="w-full h-full object-cover filter brightness-75">
+            </div>
+            <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-gold-500/20 text-gold-400 text-xs font-bold uppercase tracking-widest border border-gold-500/30">
+                    Ready For Their Forever Homes
+                </span>
+                <h2 class="font-serif-title text-3xl sm:text-5xl font-bold leading-tight">
+                    Ready to Meet Your New Best Friend?
+                </h2>
+                <p class="text-stone-300 text-base sm:text-lg max-w-2xl mx-auto font-normal">
+                    Explore our available Bengal kittens and find the unique personality, color, and temperament that fits your family seamlessly.
+                </p>
+                <div class="pt-4">
+                    <a href="#kittens" class="inline-flex items-center gap-2 gold-btn-gradient text-white font-bold text-base px-8 py-4 rounded-full shadow-xl">
+                        <span>See Available Kittens</span>
+                        <i class="fa-solid fa-arrow-down text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section id="testimonials" class="py-16 md:py-24 bg-white relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-gold-600 text-xs font-bold tracking-widest uppercase">Adoptive Family Stories</span>
+                    <h2 class="font-serif-title text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 mt-2">
+                        Loved By Families Everywhere
+                    </h2>
+                    <p class="text-stone-600 mt-3 text-sm sm:text-base">Read genuine reviews from families who welcomed a Belle Ami Bengal into their hearts.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Testimonial 1 -->
+                    <div class="bg-cream-50 p-8 rounded-3xl border border-gold-500/15 shadow-soft flex flex-col justify-between card-hover">
+                        <div>
+                            <div class="flex text-amber-500 text-xs gap-1 mb-4">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-stone-700 text-sm leading-relaxed italic mb-6">
+                                “Absolutely amazing experience. Our kitten Simba is sweet, playful, full of energy, and already feels like the centerpiece of our family. You can tell how much love and early socialization went into raising him!”
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 border-t border-cream-200 pt-4">
+                            <div class="w-11 h-11 rounded-full bg-gold-500/20 text-gold-700 flex items-center justify-center font-bold text-sm">
+                                JS
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-900 text-sm">Jessica S. & Family</h4>
+                                <p class="text-xs text-stone-500">New York, NY • Adopted Simba (Brown Rosetted)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-cream-50 p-8 rounded-3xl border border-gold-500/15 shadow-soft flex flex-col justify-between card-hover">
+                        <div>
+                            <div class="flex text-amber-500 text-xs gap-1 mb-4">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-stone-700 text-sm leading-relaxed italic mb-6">
+                                “We couldn't be happier with our Snow Bengal, Nala. She greeted us with purrs on day one and gets along splendidly with our Golden Retriever. Belle Ami Bengals provided vet records and updates every single week!”
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 border-t border-cream-200 pt-4">
+                            <div class="w-11 h-11 rounded-full bg-gold-500/20 text-gold-700 flex items-center justify-center font-bold text-sm">
+                                MD
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-900 text-sm">Marcus D.</h4>
+                                <p class="text-xs text-stone-500">Greenwich, CT • Adopted Nala (Snow Lynx)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-cream-50 p-8 rounded-3xl border border-gold-500/15 shadow-soft flex flex-col justify-between card-hover">
+                        <div>
+                            <div class="flex text-amber-500 text-xs gap-1 mb-4">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-stone-700 text-sm leading-relaxed italic mb-6">
+                                “Wonderful communication from start to finish. Having the flight nanny hand-deliver our Silver Bengal safely to Boston was so stress-free. We felt supported throughout the entire adoption process.”
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 border-t border-cream-200 pt-4">
+                            <div class="w-11 h-11 rounded-full bg-gold-500/20 text-gold-700 flex items-center justify-center font-bold text-sm">
+                                ER
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-900 text-sm">Elena R.</h4>
+                                <p class="text-xs text-stone-500">Boston, MA • Hand-Delivered via Flight Nanny</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- LOCATION SECTION -->
+        <section id="locations" class="py-16 md:py-24 bg-cream-100/60 border-t border-gold-500/15">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                
+                <div class="max-w-3xl mx-auto mb-12">
+                    <span class="text-gold-600 text-xs font-bold tracking-widest uppercase">Safe Pickup & Nationwide Transportation</span>
+                    <h2 class="font-serif-title text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 mt-2">
+                        Bengal Kittens Available for Families Near You
+                    </h2>
+                    <p class="text-stone-600 mt-3 text-sm sm:text-base leading-relaxed">
+                        We welcome families for in-person visits and pickup. For adopters located further away, we offer hand-delivery options with a dedicated pet nanny who carries your kitten inside the cabin directly to your airport or doorstep.
+                    </p>
+                </div>
+
+                <!-- Location Chips -->
+                <div class="flex flex-wrap justify-center gap-3 sm:gap-4 max-w-4xl mx-auto mb-10">
+                    <div class="px-5 py-3 rounded-2xl bg-white shadow-sm border border-gold-500/20 flex items-center gap-2 text-stone-800 font-semibold text-sm">
+                        <i class="fa-solid fa-location-dot text-gold-600"></i>
+                        <span>New York (NYC & Upstate)</span>
+                    </div>
+                    <div class="px-5 py-3 rounded-2xl bg-white shadow-sm border border-gold-500/20 flex items-center gap-2 text-stone-800 font-semibold text-sm">
+                        <i class="fa-solid fa-location-dot text-gold-600"></i>
+                        <span>New Jersey</span>
+                    </div>
+                    <div class="px-5 py-3 rounded-2xl bg-white shadow-sm border border-gold-500/20 flex items-center gap-2 text-stone-800 font-semibold text-sm">
+                        <i class="fa-solid fa-location-dot text-gold-600"></i>
+                        <span>Pennsylvania</span>
+                    </div>
+                    <div class="px-5 py-3 rounded-2xl bg-white shadow-sm border border-gold-500/20 flex items-center gap-2 text-stone-800 font-semibold text-sm">
+                        <i class="fa-solid fa-location-dot text-gold-600"></i>
+                        <span>Connecticut</span>
+                    </div>
+                    <div class="px-5 py-3 rounded-2xl bg-white shadow-sm border border-gold-500/20 flex items-center gap-2 text-stone-800 font-semibold text-sm">
+                        <i class="fa-solid fa-location-dot text-gold-600"></i>
+                        <span>Massachusetts</span>
+                    </div>
+                    <div class="px-5 py-3 rounded-2xl bg-white shadow-sm border border-gold-500/20 flex items-center gap-2 text-stone-800 font-semibold text-sm">
+                        <i class="fa-solid fa-plane text-gold-600"></i>
+                        <span>Nationwide US & Canada Flight Nanny</span>
+                    </div>
+                </div>
+
+                <a href="#contact" class="inline-flex items-center gap-2 gold-btn-gradient text-white font-semibold text-sm px-7 py-3.5 rounded-full shadow-md">
+                    <span>Inquire About Delivery Options</span>
+                    <i class="fa-solid fa-paper-plane text-xs"></i>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section id="faq" class="py-16 md:py-24 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-14">
+                    <span class="text-gold-600 text-xs font-bold tracking-widest uppercase">Common Questions</span>
+                    <h2 class="font-serif-title text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 mt-2">
+                        Frequently Asked Questions
+                    </h2>
+                    <p class="text-stone-600 mt-2 text-sm">Everything you need to know about our breeding process, health guarantee, and adopting a Bengal kitten.</p>
+                </div>
+
+                <!-- ACCORDION CONTAINER -->
+                <div class="space-y-4" id="faqAccordion">
+                    
+                    <!-- FAQ Item 1 -->
+                    <div class="border border-gold-500/20 rounded-2xl overflow-hidden bg-cream-50/50">
+                        <button class="faq-toggle w-full p-6 text-left flex items-center justify-between font-bold text-stone-900 hover:text-gold-700 transition-colors">
+                            <span class="font-serif-title text-xl">How much do Bengal kittens cost?</span>
+                            <i class="fa-solid fa-chevron-down text-gold-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 text-stone-600 text-sm leading-relaxed">
+                            <p>Our pet Bengal kittens typically range depending on rosette contrast, pattern rarity (Brown Rosetted, Snow Lynx, Silver), and bloodline pedigree. Every kitten includes complete vet checkups, vaccinations, microchipping, TICA registration papers, a written health guarantee, and a starter pack. Contact us for specific current pricing on individual kittens.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="border border-gold-500/20 rounded-2xl overflow-hidden bg-cream-50/50">
+                        <button class="faq-toggle w-full p-6 text-left flex items-center justify-between font-bold text-stone-900 hover:text-gold-700 transition-colors">
+                            <span class="font-serif-title text-xl">Are Bengal kittens good family pets?</span>
+                            <i class="fa-solid fa-chevron-down text-gold-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 text-stone-600 text-sm leading-relaxed">
+                            <p>Yes! Bengals are renowned for their highly affectionate, dog-like, and interactive personalities. Because our kittens are family-raised in our living area with gentle handling, they form deep bonds with children and adapt wonderfully to homes with other friendly pets like dogs.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="border border-gold-500/20 rounded-2xl overflow-hidden bg-cream-50/50">
+                        <button class="faq-toggle w-full p-6 text-left flex items-center justify-between font-bold text-stone-900 hover:text-gold-700 transition-colors">
+                            <span class="font-serif-title text-xl">How are the kittens raised?</span>
+                            <i class="fa-solid fa-chevron-down text-gold-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 text-stone-600 text-sm leading-relaxed">
+                            <p>Our kittens are raised underfoot right inside our household—never isolated in cages or outdoor catteries. They are exposed to daily living room sounds, vacuum cleaners, music, and social interactions, making them naturally confident, curious, and well-behaved when joining your home.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="border border-gold-500/20 rounded-2xl overflow-hidden bg-cream-50/50">
+                        <button class="faq-toggle w-full p-6 text-left flex items-center justify-between font-bold text-stone-900 hover:text-gold-700 transition-colors">
+                            <span class="font-serif-title text-xl">Are kittens vaccinated before going home?</span>
+                            <i class="fa-solid fa-chevron-down text-gold-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 text-stone-600 text-sm leading-relaxed">
+                            <p>Absolutely. Before leaving our care (at 12 to 14 weeks of age), every kitten receives two rounds of core FVRCP vaccinations, deworming treatments, a microchip, and a comprehensive health examination by our licensed veterinarian with a signed health certificate.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="border border-gold-500/20 rounded-2xl overflow-hidden bg-cream-50/50">
+                        <button class="faq-toggle w-full p-6 text-left flex items-center justify-between font-bold text-stone-900 hover:text-gold-700 transition-colors">
+                            <span class="font-serif-title text-xl">Can kittens be delivered if I live out of state?</span>
+                            <i class="fa-solid fa-chevron-down text-gold-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 text-stone-600 text-sm leading-relaxed">
+                            <p>Yes. We offer professional flight nanny services where a trained pet travel attendant carries your kitten in-cabin during the flight and meets you directly at your nearest airport. We also offer personal hand-delivery throughout the Tri-State and New England area.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 6 -->
+                    <div class="border border-gold-500/20 rounded-2xl overflow-hidden bg-cream-50/50">
+                        <button class="faq-toggle w-full p-6 text-left flex items-center justify-between font-bold text-stone-900 hover:text-gold-700 transition-colors">
+                            <span class="font-serif-title text-xl">How do I reserve a kitten?</span>
+                            <i class="fa-solid fa-chevron-down text-gold-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 text-stone-600 text-sm leading-relaxed">
+                            <p>To reserve a kitten, simply complete our online inquiry form below or give us a call. After a brief chat to ensure a good match, a deposit secures your chosen kitten or your spot on our priority waitlist.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 7 -->
+                    <div class="border border-gold-500/20 rounded-2xl overflow-hidden bg-cream-50/50">
+                        <button class="faq-toggle w-full p-6 text-left flex items-center justify-between font-bold text-stone-900 hover:text-gold-700 transition-colors">
+                            <span class="font-serif-title text-xl">What support do you provide after adoption?</span>
+                            <i class="fa-solid fa-chevron-down text-gold-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 text-stone-600 text-sm leading-relaxed">
+                            <p>We offer lifetime breeder support! You can reach out to us anytime via phone, message, or email with questions regarding dietary recommendations, cat litter setup, vet advice, or behavioral adjustment support.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FINAL CTA BANNER -->
+        <section class="py-16 bg-gradient-to-r from-stone-900 via-stone-850 to-stone-900 text-white relative overflow-hidden">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 relative z-10">
+                <div class="w-16 h-16 rounded-full bg-gold-500/20 flex items-center justify-center mx-auto text-gold-400 text-2xl border border-gold-500/30">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <h2 class="font-serif-title text-3xl sm:text-5xl font-bold">
+                    Let's Find the Perfect Bengal for Your Family
+                </h2>
+                <p class="text-stone-300 text-sm sm:text-base max-w-2xl mx-auto font-light">
+                    Have questions about available kittens, upcoming litters, pricing, or the adoption process? We'd love to connect with you.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                    <a href="#contact" class="w-full sm:w-auto gold-btn-gradient text-white font-bold text-sm px-8 py-4 rounded-full shadow-lg">
+                        Contact Us Today
+                    </a>
+                    <a href="#kittens" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-bold text-sm px-8 py-4 rounded-full border border-white/20 transition-all">
+                        View Available Kittens
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-16 md:py-24 bg-cream-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Contact Details -->
+                    <div class="lg:col-span-5 space-y-8">
+                        <div>
+                            <span class="text-gold-600 text-xs font-bold tracking-widest uppercase">Get In Touch</span>
+                            <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-stone-900 mt-2">
+                                Start Your Bengal Journey
+                            </h2>
+                            <p class="text-stone-600 mt-3 text-sm leading-relaxed">
+                                Fill out our brief inquiry form and we will reach back out within 24 hours with availability details, video clips, and answers to your questions.
+                            </p>
+                        </div>
+
+                        <div class="space-y-6">
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-white shadow-sm border border-gold-500/20 text-gold-600 flex items-center justify-center text-lg shrink-0">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-stone-900 text-sm">Call or Text Us</h4>
+                                    <p class="text-stone-600 text-sm mt-0.5">(914) 555-0198</p>
+                                    <span class="text-[11px] text-stone-400">Available Mon-Sat 9am - 7pm EST</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-white shadow-sm border border-gold-500/20 text-gold-600 flex items-center justify-center text-lg shrink-0">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-stone-900 text-sm">Email Us</h4>
+                                    <p class="text-stone-600 text-sm mt-0.5">info@belleamibengals.com</p>
+                                    <span class="text-[11px] text-stone-400">Quick response within 24 hours</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-white shadow-sm border border-gold-500/20 text-gold-600 flex items-center justify-center text-lg shrink-0">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-stone-900 text-sm">Cattery Location</h4>
+                                    <p class="text-stone-600 text-sm mt-0.5">Westchester County, New York</p>
+                                    <span class="text-[11px] text-stone-400">In-person visits by appointment</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Social Connections -->
+                        <div class="pt-6 border-t border-gold-500/20">
+                            <h4 class="text-xs font-bold text-stone-900 uppercase tracking-wider mb-3">Follow Nursery Updates</h4>
+                            <div class="flex gap-3">
+                                <a href="#" class="w-10 h-10 rounded-full bg-white border border-gold-500/20 text-stone-700 hover:text-gold-600 flex items-center justify-center shadow-sm transition-colors">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-white border border-gold-500/20 text-stone-700 hover:text-gold-600 flex items-center justify-center shadow-sm transition-colors">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-white border border-gold-500/20 text-stone-700 hover:text-gold-600 flex items-center justify-center shadow-sm transition-colors">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="lg:col-span-7 bg-white p-8 sm:p-10 rounded-3xl shadow-lg border border-gold-500/20 relative">
+                        <form id="adoptionForm" onsubmit="handleFormSubmit(event)" class="space-y-5">
+                            
+                            <h3 class="font-serif-title text-2xl font-bold text-stone-900 mb-2">Kitten Inquiry Form</h3>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-2">Your Name *</label>
+                                    <input type="text" required placeholder="e.g. Sarah Jenkins" 
+                                           class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 outline-none text-sm bg-cream-50/30">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-2">Phone Number *</label>
+                                    <input type="tel" required placeholder="(555) 000-0000" 
+                                           class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 outline-none text-sm bg-cream-50/30">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-2">Email Address *</label>
+                                    <input type="email" required placeholder="sarah@example.com" 
+                                           class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 outline-none text-sm bg-cream-50/30">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-2">Location / State *</label>
+                                    <input type="text" required placeholder="e.g. New York, NY" 
+                                           class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 outline-none text-sm bg-cream-50/30">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-2">Interested Kitten / Color Preference</label>
+                                <select id="formKittenSelect" class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 outline-none text-sm bg-cream-50/30 font-medium">
+                                    <option value="General Inquiry">General Inquiry / Not Sure Yet</option>
+                                    <option value="Leo (Brown Rosetted Male)">Leo - Brown Rosetted Male (Available)</option>
+                                    <option value="Maya (Snow Seal Lynx Female)">Maya - Snow Lynx Female (Available)</option>
+                                    <option value="Cleo (Warm Golden Female)">Cleo - Warm Golden Female (Available)</option>
+                                    <option value="Casper (Snow Mink Male)">Casper - Snow Mink Male (Available)</option>
+                                    <option value="Upcoming Litter Waitlist">Join Upcoming Litter Waitlist</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-2">Tell Us About Your Home Environment</label>
+                                <textarea rows="4" placeholder="Let us know if you have other pets, children, or any specific questions..." 
+                                          class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 outline-none text-sm bg-cream-50/30"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full gold-btn-gradient text-white font-bold text-sm py-4 rounded-xl shadow-md flex items-center justify-center gap-2">
+                                <span>Submit Adoption Inquiry</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+
+                            <p class="text-[11px] text-stone-400 text-center mt-2">
+                                We respect your privacy. Your contact details will only be used to respond to your kitten inquiry.
+                            </p>
+
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-stone-900 text-stone-400 py-16 border-t border-gold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+                
+                <!-- Col 1: About -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-gold-500/20 flex items-center justify-center border border-gold-500/30">
+                            <i class="fa-solid fa-cat text-gold-400"></i>
+                        </div>
+                        <span class="font-serif-title text-2xl font-bold text-white">Belle Ami Bengals</span>
+                    </div>
+                    <p class="text-xs text-stone-400 leading-relaxed max-w-sm">
+                        Ethical, TICA-registered Bengal cat breeder dedicated to raising healthy, vibrant, and loving Bengal companions in a warm family home environment.
+                    </p>
+                    <p class="text-xs text-gold-400 font-semibold">TICA & CFA Registered Cattery • HCM Cardiac Tested Clear</p>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Quick Links</h4>
+                    <ul class="space-y-2.5 text-xs">
+                        <li><a href="#home" class="hover:text-gold-400 transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-gold-400 transition-colors">About Our Cattery</a></li>
+                        <li><a href="#kittens" class="hover:text-gold-400 transition-colors">Available Kittens</a></li>
+                        <li><a href="#why-us" class="hover:text-gold-400 transition-colors">Why Choose Us</a></li>
+                        <li><a href="#testimonials" class="hover:text-gold-400 transition-colors">Adoption Reviews</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Adoption Info -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Adoption Info</h4>
+                    <ul class="space-y-2.5 text-xs">
+                        <li><a href="#locations" class="hover:text-gold-400 transition-colors">NY, NJ, CT Delivery</a></li>
+                        <li><a href="#locations" class="hover:text-gold-400 transition-colors">Flight Nanny Transport</a></li>
+                        <li><a href="#faq" class="hover:text-gold-400 transition-colors">Health Guarantee FAQ</a></li>
+                        <li><a href="#faq" class="hover:text-gold-400 transition-colors">Kitten Pricing & Process</a></li>
+                        <li><a href="#contact" class="hover:text-gold-400 transition-colors">Priority Waitlist</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Contact</h4>
+                    <ul class="space-y-2.5 text-xs text-stone-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-gold-500"></i> (914) 555-0198</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-gold-500"></i> info@belleamibengals.com</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-gold-500"></i> Westchester County, NY</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="border-t border-stone-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+                <p>© 2026 Belle Ami Bengals. All Rights Reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-gold-400 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-gold-400 transition-colors">Terms & Conditions</a>
+                    <a href="#" class="hover:text-gold-400 transition-colors">Health Guarantee Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INQUIRY / RESERVATION MODAL -->
+    <div id="inquiryModal" class="fixed inset-0 bg-stone-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-white rounded-3xl p-6 sm:p-8 max-w-lg w-full shadow-2xl border border-gold-500/30 transform scale-95 transition-transform duration-300" id="modalBox">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="font-serif-title text-2xl font-bold text-stone-900" id="modalTitle">Inquire About Kitten</h3>
+                <button onclick="closeInquiryModal()" class="text-stone-400 hover:text-stone-700 text-xl"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <p class="text-xs text-stone-600 mb-6">You are inquiring about: <strong id="modalKittenName" class="text-gold-700">Selected Kitten</strong>. Please fill out your details below and our family breeder will respond promptly.</p>
+            
+            <form onsubmit="handleModalSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-[11px] font-bold text-stone-700 uppercase mb-1">Your Full Name</label>
+                    <input type="text" required placeholder="Jane Doe" class="w-full px-4 py-2.5 rounded-xl border border-stone-200 text-sm outline-none focus:border-gold-500">
+                </div>
+                <div>
+                    <label class="block text-[11px] font-bold text-stone-700 uppercase mb-1">Email or Phone Number</label>
+                    <input type="text" required placeholder="email@example.com / (555) 000-0000" class="w-full px-4 py-2.5 rounded-xl border border-stone-200 text-sm outline-none focus:border-gold-500">
+                </div>
+                <div>
+                    <label class="block text-[11px] font-bold text-stone-700 uppercase mb-1">Your Location (City/State)</label>
+                    <input type="text" required placeholder="New York, NY" class="w-full px-4 py-2.5 rounded-xl border border-stone-200 text-sm outline-none focus:border-gold-500">
+                </div>
+                <div>
+                    <label class="block text-[11px] font-bold text-stone-700 uppercase mb-1">Questions or Comments</label>
+                    <textarea rows="3" placeholder="Tell us if you'd like photos, video call, or pickup preferences..." class="w-full px-4 py-2.5 rounded-xl border border-stone-200 text-sm outline-none focus:border-gold-500"></textarea>
+                </div>
+                <button type="submit" class="w-full gold-btn-gradient text-white font-bold text-sm py-3 rounded-xl shadow-md">
+                    Send Kitten Inquiry
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- SUCCESS TOAST / MESSAGE BOX -->
+    <div id="successToast" class="fixed bottom-6 right-6 bg-stone-900 text-white px-6 py-4 rounded-2xl shadow-2xl z-50 border border-gold-500/40 flex items-center gap-4 transform translate-y-24 opacity-0 transition-all duration-300">
+        <div class="w-10 h-10 rounded-full bg-emerald-500 text-white flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <div>
+            <h4 class="font-bold text-sm text-gold-400">Inquiry Received!</h4>
+            <p class="text-xs text-stone-300">Thank you. Belle Ami Bengals will contact you shortly.</p>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // FAQ Accordion Logic
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqAnswer = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                // Toggle active class on clicked item
+                const isActive = faqAnswer.classList.contains('active');
+                
+                // Close all others
+                document.querySelectorAll('.faq-answer').forEach(ans => ans.classList.remove('active'));
+                document.querySelectorAll('.faq-toggle i').forEach(ic => ic.style.transform = 'rotate(0deg)');
+
+                if (!isActive) {
+                    faqAnswer.classList.add('active');
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+
+        // Kitten Filter Gallery
+        const filterBtns = document.querySelectorAll('#kittenFilters .filter-btn');
+        const kittenCards = document.querySelectorAll('#kittenGrid .kitten-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button state
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-gold-500', 'text-white');
+                    b.classList.add('bg-white', 'text-stone-700');
+                });
+                btn.classList.remove('bg-white', 'text-stone-700');
+                btn.classList.add('bg-gold-500', 'text-white');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                kittenCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filterValue === 'all' || category === filterValue || !category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Interactive Matchmaker Quiz Logic
+        let selectedCoat = '';
+
+        function nextQuizStep(coat) {
+            selectedCoat = coat;
+            document.getElementById('quizStep1').classList.add('hidden');
+            document.getElementById('quizStep2').classList.remove('hidden');
+        }
+
+        function finishQuiz(household) {
+            document.getElementById('quizStep2').classList.add('hidden');
+            const quizResult = document.getElementById('quizResult');
+            const resultText = document.getElementById('quizResultText');
+            
+            resultText.innerText = `Based on your preference for ${selectedCoat} and a ${household}, we recommend our current Brown Rosetted or Snow Lynx litters! They possess wonderful adaptability and loving temperaments.`;
+            quizResult.classList.remove('hidden');
+        }
+
+        // Modal Functions
+        function openInquiryModal(kittenName) {
+            const modal = document.getElementById('inquiryModal');
+            const modalBox = document.getElementById('modalBox');
+            const modalKittenName = document.getElementById('modalKittenName');
+            const selectEl = document.getElementById('formKittenSelect');
+
+            modalKittenName.innerText = kittenName;
+            
+            // Also sync main form select if matching
+            if (selectEl) {
+                for (let option of selectEl.options) {
+                    if (option.value.includes(kittenName)) {
+                        option.selected = true;
+                        break;
+                    }
+                }
+            }
+
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            modalBox.classList.remove('scale-95');
+            modalBox.classList.add('scale-100');
+        }
+
+        function closeInquiryModal() {
+            const modal = document.getElementById('inquiryModal');
+            const modalBox = document.getElementById('modalBox');
+
+            modalBox.classList.remove('scale-100');
+            modalBox.classList.add('scale-95');
+            modal.classList.add('opacity-0', 'pointer-events-none');
+        }
+
+        function showToast() {
+            const toast = document.getElementById('successToast');
+            toast.classList.remove('translate-y-24', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-24', 'opacity-0');
+            }, 4000);
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            showToast();
+            e.target.reset();
+        }
+
+        function handleModalSubmit(e) {
+            e.preventDefault();
+            closeInquiryModal();
+            showToast();
+            e.target.reset();
+        }
+
+        // Header shadow on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('mainHeader');
+            if (window.scrollY > 30) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>
